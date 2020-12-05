@@ -1,0 +1,571 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------------------------------------- */
+
+@font-face {
+         font-family: "fontcoco";
+         src: url('fonts/Coco-Gothic-Regular-trial.ttf');
+         }
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* NAV  */
+#nav{
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid black;
+    z-index: 99;
+}
+
+#logo  {
+    float: left;
+    width: 50%;
+}
+#logo img{
+    width: 300px;
+    padding: 25px 0 25px 10px;
+}
+
+#menu{
+    float: right;
+    margin: auto;
+}
+
+#menu ul{
+    /* display: inline; */
+    margin: 25px 20px 25px 0;
+    
+
+}
+
+#menu ul li{
+    display: inline;
+    padding: 10px;        
+}
+
+#menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+a#back{
+    
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 40px;
+}
+
+/* NAV */
+
+
+/* SLIDER */
+
+
+#carouselExampleIndicators{
+    margin-top: 38px;
+}
+
+#carousel-item{
+    height: 640px;
+}
+
+/* SLIDER */
+
+
+/* CATEGORY */
+
+.jumbotron{
+    background-color: #DEE7F2;
+}
+
+.jumbotron h1{
+    font-size: 3em;
+    margin: 5px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+
+.jumbotron p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 15px;    
+}
+
+#catJacket, #catHoodie, catCrewneck{
+    position: relative;
+}
+
+#catJacket p, #catHoodie p, #catCrewneck p{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-size: 2em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+#catCrewneck p{
+    left: 35%;
+}
+
+#catJacket img:hover, #catHoodie img:hover, #catCrewneck img:hover{
+    opacity: 30%;
+}
+
+#catJacket p:hover, #catHoodie p:hover, #catCrewneck p:hover{
+    color:white;
+}
+
+/* CATEGORY */
+
+
+/* MAININDEX */
+
+#main{
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    
+}
+
+#product{
+    /* background-color: green; */
+    height: 1000px;
+    width: 90%;
+    margin: auto;
+    /* padding: 0 5px; */
+    padding: 10px;
+}
+
+#item{
+    margin: 20px 0;
+}
+
+#item img{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    height: auto;
+}
+
+
+#name{
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.603);
+    padding: 3px;
+    width: auto;
+    margin-top: 5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    
+}
+
+#price{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#item img:hover{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    height: auto;
+    opacity: 80%;
+}
+
+#item a{
+    text-decoration: none;
+    color: black;
+}
+#update{
+    width: 100%;
+    float: left;
+    display: inline;
+    margin-top: 7px;
+    box-sizing: border-box;
+}
+
+#edit, #delete {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+
+#edit a, #delete a{
+    border: 1px solid black;
+    padding: 1px 7px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+
+/* MAININDEX */
+
+/* MAINADMIN */
+
+    #mainadmin{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }    
+
+    a#add {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        border: 1px black solid;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+
+    a#add:hover {
+        color: black;
+        background-color: white;
+
+    }
+
+    .add{
+        text-align: center;
+        margin: 20px 0 20px 0;
+    }
+
+
+/* MAINADMIN */
+
+/* MAINTAMBAH */
+
+    .image{
+        margin:auto;
+        text-align: center;
+    }
+
+    img#gambar{
+        /* margin: auto; */
+        text-align: center;
+        width: 50%;
+    }
+
+    input,button{  
+        display: block;
+        width: 80%;
+        font-size: 14pt;
+        line-height: 28pt;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-bottom: 28pt;
+        border: none;
+        border-bottom: 5px solid rgba(0,0,0,1);
+        /* background: $form-bg */
+        min-width: 250px;
+        padding-left: 5px;
+        outline: none;
+        color: rgba(0,0,0,1);
+        margin: auto;
+        margin-top: 20px;
+    }
+    input:focus{
+    border-bottom: 5px solid #ffa580;
+    }
+
+    button{
+        width: 20%;
+    }
+
+    button{
+        display: block;
+        margin: 0 auto;
+        line-height: 28pt;
+        padding: 0 20px;
+        background: #ffa580;
+        letter-spacing: 2px;
+        transition: .2s all ease-in-out;
+        outline: none;
+        border: 1px solid rgba(0,0,0,1);
+        background-color: #ffa580;
+        box-shadow: 3px 3px 1px  #ffa580, 3px 3px 1px 1px  #95a4ff;
+        margin-top: 20px;
+    }
+  
+    
+/* MAINTAMBAH */
+
+
+/* FOOTER */
+
+.kaki{
+    width: 100%;
+    background-color: white;
+    height: 30px;
+    bottom: 0;
+    position: fixed;
+    border-top: 1px solid black;
+}
+
+.copyright{
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.by{
+    float: left;
+    width: 50%;
+    right: 0;
+    display: block;
+    text-align: right;
+    padding-right: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.by a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.by a:hover{
+    color: aquamarine;
+}
+
+/* FOOTER */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  /* NAV */
+
+
+  #logo {
+      width: 100%;
+      text-align: center;
+      font-size: 1em;
+      padding: 0;
+  }
+
+  #menu{
+      width: 100%;
+      float: left;
+      padding: 0;
+  }
+
+  #logo img{
+      padding: 15px 0 0 0;
+      width: 200px;
+  }
+
+  #menu ul{
+      font-size: 10px;
+      text-align: center;
+      padding: 0;
+      margin: 10px 0 5px 0;
+  }
+
+  #menu a{
+      font-size: 10px;
+      margin-top: -20px;
+      height: 10px;
+  }
+
+  #nav{
+      height: auto;
+      padding: 5px;
+  }
+
+
+/* NAV */
+
+
+/* SLIDER */
+
+  #carouselExampleIndicators{
+      margin-top: 67px;
+  }
+
+  #carousel-item{
+    height: 120px;
+  }
+
+/* SLIDER */
+
+
+/* CATEGORY */
+
+    .jumbotron h1{
+        font-size: 2em;
+    }
+
+    .jumbotron p{
+        font-size: 12px;
+    }
+
+    #catJacket img, #catHoodie img, #catCrewneck img{
+        opacity: 50%;
+    }
+    #catJacket p, #catHoodie p, #catCrewneck p{
+        
+    }
+    /* CATEGORY */
+
+    /* MAININDEX */
+
+    .container{
+        margin-bottom: 30px;
+    }
+
+    #name{
+        position: static;
+        margin-top: 10px 0 10px 0;
+        font-weight: lighter;
+    }
+
+    #price{
+        font-size: 0.8em;
+        margin: 5px 0 5px 0;
+
+    }
+
+    #size{
+        font-size: 15px;
+        margin: 5px 0 5px 0;
+    }
+
+
+    #edit a, #delete a{
+    font-size: 10px;
+}
+
+    /* MAININDEX */
+
+
+    /* MAINADMIN */
+
+    .itemadmin {
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+
+    /* MAINADMIN */
+
+
+    /* MAINTAMBAH */
+
+    .image{
+        /* width: 100%;
+        height: 400px;
+        background-color: black; */
+        text-align: center;
+        /* border: 1px solid black; */
+        display: block;
+        margin: auto;
+    }
+
+    img#gambar{
+        margin: auto;
+        /* text-align: center; */
+        width: 70%;
+    }
+
+    #pilih{
+        font-size: 10px;
+        padding: 0;
+        width: 80%;
+    }
+
+    button{
+        width: auto;
+    }
+
+    /* MAINTAMBAH */
+
+    /* FOOTER */
+
+    .kaki{
+        position: fixed;
+        background-color: white;
+    }
+
+    .copyright{
+        font-size: 10px;
+        padding-top: 10px;
+    }
+
+    .by{
+        font-size: 10px;
+        padding-top: 10px;
+    }
+
+    /* FOOTER */
+
+
+
+}
